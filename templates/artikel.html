@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TGM</title>
+    <!-- Menambahkan Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,200&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="../static/css/style.css" rel="stylesheet">
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <a class="navbar-brand" href="#">
+        <img src="../static/asset/Logo.png" class="tgm">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link pl-5" href="../templates/index.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link pl-4" href="../templates/tentangkami.html">Tentang Kami</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link pl-4" href="../templates/produk.html">Produk</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link pl-4" href="../templates/artikel.html">Artikel</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-custom nav-link" href="../templates/kontak.html">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<section class="profil" id="profil">
+    <div class="text-center mt-5 mb-5 galeri" id="gallery"></div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+                <img class="maksimumsize" src="../static/asset/file.png" alt="">
+            </div>
+            <div class="col-md-5">
+                <p class="text-white-75 mb-4 quotes">"Dapatkan produk-produk kami dan tingkatkan potensi bisnis anda dengan layanan kami"</p>
+                <button class="btn btn-tgm d-grid gap-2 col-6 mx-auto" type="button">Hubungi Kami</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-left">
+            <img src="../static/asset/Logo.png" alt="Logo" class="footer-logo">
+            <p>Lorem ipsum dolor sit amet consectetur. Ornare facilisis ultricies integer scelerisque euismod...</p>
+        </div>
+        <div class="footer-right">
+            <ul class="footer-social">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+            <p><i class="fas fa-phone-alt"></i> 026-5264-4190</p>
+            <p>Jalan Mayor Mansu, Sindangpakuon,<br>Kec. Cimanggung, Kab. Sumedang,<br>Jawa Barat 122566</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>Copyright © 2024, Air Mineral. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+
+<!-- Menambahkan Bootstrap JS dan jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    // Menjalankan auto-slide dengan interval 3 detik
+    $('.carousel').carousel({
+        interval: 3000
+    });
+
+    // Mengubah warna background navbar saat di-scroll
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 50) {
+            $('.navbar').addClass('scrolled');
+        } else {
+            $('.navbar').removeClass('scrolled');
+        }
+    });
+
+</script>
+
+</body>
+</html>
